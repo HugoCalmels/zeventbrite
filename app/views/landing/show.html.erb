@@ -1,2 +1,57 @@
-<h1>Landing#show</h1>
-<p>Find me in app/views/landing/show.html.erb</p>
+
+
+<div class="container">
+
+    <div class="d-flex flex-row justify-content-center">
+
+      <div class="col-md-8">
+          <div class="card">
+
+              <div class="card-header">
+
+              <%= @event.title %>
+
+              </div>
+
+              <div class="card-body">
+
+              <p class="lead">
+                  <%= @event.description %>
+              </p>
+
+              <p class="lead">
+                  <%= @event.start_date %>
+              </p>
+
+              <p class="lead">
+                 <%= @event.duration %>
+              </p>
+
+              <p class="lead">
+                 <%= @event.price %>
+              </p>
+
+              <p class="lead">
+                  <%= @event.location %>
+              </p>
+
+            
+
+              <br></br>
+              
+              <p class="lead">
+                  <%= link_to "Back", root_path, class: 'btn btn-outline-secondary' %>
+              </p>
+          
+
+          </div>
+
+      </div>
+
+  </div>
+
+</div>
+</div>
+
+
+

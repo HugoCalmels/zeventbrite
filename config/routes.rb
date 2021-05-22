@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   devise_for :users
   resources :landing, only: [:index, :show]
   root 'landing#index'
